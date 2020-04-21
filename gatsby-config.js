@@ -149,7 +149,48 @@ module.exports = {
         },
       },
     },*/
-	
+	{
+	resolve: `gatsby-plugin-netlify`,
+    options: {
+      headers: {
+		  "/*.js": [
+		  "cache-control: public, max-age=31536000, immutable",
+		  ],
+		  "/*.css": [
+		  "cache-control: public, max-age=31536000, immutable",
+		  ],
+		  "/*.jpeg": [
+		  "cache-control: public, max-age=31536000, immutable",
+		  ],
+		  "/*.jpg": [
+		  "cache-control: public, max-age=31536000, immutable",
+		  ],
+		  "/*.svg": [
+		  "cache-control: public, max-age=31536000, immutable",
+		  ],
+		  "/*.png": [
+		  "cache-control: public, max-age=31536000, immutable",
+		  ],
+		  "/*.html": [
+		  "cache-control: public, max-age=31536000, immutable",
+		  ],
+		  "/*.pdf": [
+		  "cache-control: public, max-age=31536000, immutable",
+		  ],
+		  "/*.ico": [
+		  "cache-control: public, max-age=31536000, immutable",
+		  ],
+
+		  
+	  }, // option to add more headers. `Link` headers are transformed by the below criteria
+      allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
+      mergeSecurityHeaders: true, // boolean to turn off the default security headers
+      mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
+      mergeCachingHeaders: true, // boolean to turn off the default caching headers
+      transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
+      generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+    },
+	},
     {
       resolve: 'gatsby-plugin-algolia-docsearch',
       options: {
