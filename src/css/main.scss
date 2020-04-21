@@ -5,7 +5,9 @@
 
 body {
   background: $daisy-snow;
-  font-family: 'Roboto', sans-serif;
+ /* font-family: 'Roboto', sans-serif;*/
+ /*font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;*/
+ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   color: $text-normal;
   -webkit-font-smoothing: antialiased;
   font-size: 18px;
@@ -327,7 +329,7 @@ li.navigation__item:hover ul.drop-down{
 
 
 /*scrollbar styling*/
-::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px #c7c7c7;-webkit-border-radius:10px;border-radius:10px}::-webkit-scrollbar-thumb{-webkit-border-radius:10px;border-radius:10px;background:#c7c7c7;-webkit-box-shadow:inset 0 0 6px #c7c7c7}
+::-webkit-scrollbar{width:8px;height:6px}::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px #c7c7c7;-webkit-border-radius:10px;border-radius:10px}::-webkit-scrollbar-thumb{-webkit-border-radius:10px;border-radius:10px;background:#c7c7c7;-webkit-box-shadow:inset 0 0 6px #c7c7c7}
 
 /*scrollbar styling*/
 
@@ -340,7 +342,11 @@ color: inherit!important;
 text-shadow: none!important;
 }
 /*prismjs customizations */  
-
+:not(pre) > code[class*="language-"], pre[class*="language-"]{
+background: #f7f7f7!important;
+border: 1px solid rgba(0, 0, 0, 0.05);
+border-radius: 3px;
+}
 
 
 .error-page{

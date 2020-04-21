@@ -136,7 +136,7 @@ module.exports = {
         ],
       },
     },
-	{
+	/*{
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
@@ -148,7 +148,7 @@ module.exports = {
           ],
         },
       },
-    },
+    },*/
 	
     {
       resolve: 'gatsby-plugin-algolia-docsearch',
