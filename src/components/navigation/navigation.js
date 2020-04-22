@@ -33,12 +33,12 @@ export default ({ pathname }) => {
       </Link>
       <ul className="navigation__list">
         <NavItem linkTo="/html.html" title="HTML" />
-		<NavItem linkTo="/bootstrap.html" title="Bootstrap" />
-        <NavItem linkTo="/programs.html" title="Programs" />
-        <NavItem linkTo="/glossary" title="Glossary" />
+		<NavItem linkTo="/bootstrap.html" title="CSS" />
+        <NavItem linkTo="/programs.html" title="Javascript" />
+        <NavItem linkTo="/glossary" title="Bootstrap" />
        
-        <NavItem linkTo="/changelog" title="Changelog" />
-        <NavItem linkTo="/accessibility" title="Accessibility" />
+        <NavItem linkTo="/changelog" title="Materialize" />
+        <NavItem linkTo="/accessibility" title="React" />
 		
 		
 		

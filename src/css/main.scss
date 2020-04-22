@@ -14,10 +14,16 @@ body {
 line-height: 1.6;
 }
 
-p, a, blockquote, th, td, li{
+p, a, blockquote, th, td, li, img{
 
 }
-.gatsby-highlight{
+
+
+optgroup{
+font-weight: 500;
+}
+
+code, pre, iframe, table, .gatsby-highlight{
     width: 100%;
     height: 100%;
     top: 0;
@@ -34,7 +40,7 @@ padding: 0;
 
 @media (min-width: 320px) and (max-width: 480px) {
   
- .gatsby-highlight{
+code, pre, iframe, table, .gatsby-highlight{
     width: 100%;
     height: 100%;
     top: 0;
@@ -108,7 +114,7 @@ code.language-text {
 
   h1 {
     color: $daisy-white;
-    font-weight: 300;
+    font-weight: 400;
 
     @media (min-width: $mobile-breakpoint) {
       font-size: 60px;
@@ -159,7 +165,7 @@ margin: 0;
 }
 
 .upvote {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 20px;
   text-decoration: none;
 
@@ -363,3 +369,11 @@ border-radius: 3px;
 	}
 
 }
+
+
+
+
+
+
+
+

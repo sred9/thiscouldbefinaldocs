@@ -43,10 +43,10 @@ const IndexPage = () => {
                 alt="Hackers"
                 className="topic__image"
               />
-              <div>
+             
                 <h2>HTML</h2>
              
-              </div>
+             
             </Topic>
 
             <Topic url={withPrefix("/programs.html")}>
@@ -57,10 +57,10 @@ const IndexPage = () => {
                 alt="Programs"
                 className="topic__image"
               />
-              <div>
+             
                 <h2>CSS</h2>
               
-              </div>
+             
             </Topic>
 			
 			            <Topic url={withPrefix("/programs.html")}>
@@ -76,6 +76,171 @@ const IndexPage = () => {
               
               </div>
             </Topic>
+			
+			<Topic url={withPrefix("/programs.html")}>
+              <img
+                src={javascript}
+                width="44"
+                height="44"
+                alt="Programs"
+                className="topic__image"
+              />
+             
+                <h2>Javascript</h2>
+              
+              
+            </Topic>
+			
+			<Topic url={withPrefix("/programs.html")}>
+              <img
+                src={javascript}
+                width="44"
+                height="44"
+                alt="Programs"
+                className="topic__image"
+              />
+              <div>
+                <h2>Javascript</h2>
+              
+              </div>
+            </Topic>
+			
+			<Topic url={withPrefix("/programs.html")}>
+              <img
+                src={javascript}
+                width="44"
+                height="44"
+                alt="Programs"
+                className="topic__image"
+              />
+              <div>
+                <h2>Javascript</h2>
+              
+              </div>
+            </Topic>
+			
+			<Topic url={withPrefix("/programs.html")}>
+              <img
+                src={javascript}
+                width="44"
+                height="44"
+                alt="Programs"
+                className="topic__image"
+              />
+              <div>
+                <h2>Javascript</h2>
+              
+              </div>
+            </Topic>
+			
+			
+			<Topic url={withPrefix("/programs.html")}>
+              <img
+                src={javascript}
+                width="44"
+                height="44"
+                alt="Programs"
+                className="topic__image"
+              />
+              <div>
+                <h2>Javascript</h2>
+              
+              </div>
+            </Topic>
+			
+			
+			
+			<Topic url={withPrefix("/programs.html")}>
+              <img
+                src={javascript}
+                width="44"
+                height="44"
+                alt="Programs"
+                className="topic__image"
+              />
+              <div>
+                <h2>Javascript</h2>
+              
+              </div>
+            </Topic>
+			
+			
+			<Topic url={withPrefix("/programs.html")}>
+              <img
+                src={javascript}
+                width="44"
+                height="44"
+                alt="Programs"
+                className="topic__image"
+              />
+              <div>
+                <h2>Javascript</h2>
+              
+              </div>
+            </Topic>
+			
+			
+			<Topic url={withPrefix("/programs.html")}>
+              <img
+                src={javascript}
+                width="44"
+                height="44"
+                alt="Programs"
+                className="topic__image"
+              />
+              <div>
+                <h2>Javascript</h2>
+              
+              </div>
+            </Topic>
+			
+			
+			<Topic url={withPrefix("/programs.html")}>
+              <img
+                src={javascript}
+                width="44"
+                height="44"
+                alt="Programs"
+                className="topic__image"
+              />
+              <div>
+                <h2>Javascript</h2>
+              
+              </div>
+            </Topic>
+			
+			
+			<Topic url={withPrefix("/programs.html")}>
+              <img
+                src={javascript}
+                width="44"
+                height="44"
+                alt="Programs"
+                className="topic__image"
+              />
+              <div>
+                <h2>Javascript</h2>
+              
+              </div>
+            </Topic>
+			
+			
+			<Topic url={withPrefix("/programs.html")}>
+              <img
+                src={javascript}
+                width="44"
+                height="44"
+                alt="Programs"
+                className="topic__image"
+              />
+              <div>
+                <h2>Javascript</h2>
+              
+              </div>
+            </Topic>		
+			
+			
+			
           </div>
         </div>
       </section>
