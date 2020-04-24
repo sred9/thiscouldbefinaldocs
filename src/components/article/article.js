@@ -83,7 +83,7 @@ class IndexRoute extends React.Component {
   render() {
     const { links, path, title, children, description, headings } = this.props;
     const githubRepo =
-      "https://github.com/Hacker0x01/docs.hackerone.com/blob/master/docs/";
+      "https://github.com/sred9/thiscouldbefinaldocs/tree/master/docs/";
 
     const globalWindow =
       typeof window !== "undefined"
@@ -119,7 +119,7 @@ class IndexRoute extends React.Component {
                 <div className="footer-column footer-column--left">
                   <div className="footer-column-block">
                     <a href={githubRepo + this.props.docOnGithub}>
-                      Edit this page on GitHub
+                      Improve this article
                     </a>
                   </div>
                 </div>

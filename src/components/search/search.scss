@@ -15,7 +15,8 @@
 
 .search__input {
   appearance: none;
-  background: $daisy-white;
+  background: var(--searchBackground);
+  color: var(--searchColor);
   border: 0;
   border-radius: 4px;
   font-size: 16px;

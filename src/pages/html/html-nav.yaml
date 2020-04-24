@@ -172,3 +172,20 @@
       path: /hackers/disclosure.html
     - title: Keyboard Shortcuts
       path: /hackers/keyboard-shortcuts.html
+- title: Streams
+  items:
+    - title: HTML
+      path: /hackers/reputation.html
+    - title: CSS
+      path: /hackers/reputation.html
+    - title: Javascript
+      path: /hackers/reputation.html
+    - title: jQuery
+      path: /hackers/reputation.html
+    - title: Bootstrap
+      path: /hackers/reputation.html
+    - title: PHP
+      path: /hackers/reputation.html
+    - title: Materialize
+      path: /hackers/reputation.html
+      

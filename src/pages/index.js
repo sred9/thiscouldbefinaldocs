@@ -7,6 +7,8 @@ import GatsbyConfig from "../../gatsby-config";
 import html from "../images/html-5.svg";
 import css from "../images/css-3.svg";
 import javascript from "../images/javascript.svg";
+import bootstrap from "../images/bootstrap.svg";
+
 
 const IndexPage = () => {
   return (
@@ -79,14 +81,14 @@ const IndexPage = () => {
 			
 			<Topic url={withPrefix("/programs.html")}>
               <img
-                src={javascript}
+                src={bootstrap}
                 width="44"
                 height="44"
-                alt="Programs"
+                alt="Bootstrap"
                 className="topic__image"
               />
              
-                <h2>Javascript</h2>
+                <h2>Bootstrap</h2>
               
               
             </Topic>

@@ -74,7 +74,7 @@
 	outline: 0;
 	-webkit-box-shadow: inset 0 0 0 1px #aaa;
 	box-shadow: inset 0 0 0 1px #aaa;
-	background: #fff
+	background: #fff;
 }
 
 .searchbox__input::-webkit-input-placeholder {
@@ -256,16 +256,15 @@
 	display: block;
 	position: absolute;
 	content: '';
-	width: 12px;
-	height: 12px;
+	font-size: 24px;
 	background: #fff;
 	z-index: 1000;
-	top: -6px;
+	top: -3px;
 	border-top: 0 solid #d9d9d9!important;
 	border-right: 0 solid #d9d9d9!important;
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-	border-radius: 2px
+	border-radius: 0px
 }
 
 .algolia-autocomplete .ds-dropdown-menu .ds-suggestions {

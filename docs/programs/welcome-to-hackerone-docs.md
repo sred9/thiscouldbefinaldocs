@@ -5,7 +5,7 @@ id: "programs/welcome-to-hackerone-docs"
 bookIndexFor: "programs"
 ---
 test for <a href="/programs/product-offerings.html">catch links</a>
-test for <a href="/pages/test">catch links not react</a>
+test for <a href="/pages/test.html">catch links not react</a>
 Are you launching a new program or wanting to learn more about a feature on HackerOne? You're in the right place. These guides will help you to understand the product so that you can easily navigate through your hacker-powered security program. Check out the sections on the left to learn more.
 
 To help you get started, take a look at these docs:

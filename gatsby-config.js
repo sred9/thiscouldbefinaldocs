@@ -12,6 +12,9 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-layout',
 	'gatsby-plugin-catch-links',
+	'gatsby-plugin-dark-mode',
+    'gatsby-plugin-optimize-svgs',
+
 		
     {
       resolve: 'gatsby-source-filesystem',
