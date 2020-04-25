@@ -84,6 +84,20 @@
 
 
 
-li.navigation__item.dark-toggle{
-margin-top: 5px;
+li.navigation__item.dark-toggle {
+margin-top: 6px;
+
 } 
+
+li.navigation__item.dark-toggle label.dark-toggle:hover{
+cursor: pointer;
+} 
+
+li.navigation__item.dark-toggle label.dark-toggle svg{
+fill: var(--darkToggle);
+}
+li.navigation__item.dark-toggle label.dark-toggle:hover svg{
+fill: $lime-green;
+}  
+
+

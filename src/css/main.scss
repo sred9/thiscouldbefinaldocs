@@ -6,6 +6,7 @@
 
 body {
 --textNormal: rgba(14, 30, 37, 0.87);
+--codeNormal: /*#252c33;*/ rgba(14, 30, 37, 0.87);
 --textHeading: rgba(14, 30, 37, 0.9);
 --bodyBackground: #f9f9f9;
 --navText: rgba(255,255,255,0.95);
@@ -20,7 +21,7 @@ body {
 --tdBorder: 1px solid rgba(0, 0, 0, 0.1);
 --codeBackground: #F7F7F7;
 --quoteBackground: #CAFFEA;
-
+--darkToggle: rgba(255,255,255,0.95);
 --prism-comment: #527713;
 --prism-property: #137886;
 --prism-punctuation: #53450e;
@@ -41,13 +42,14 @@ body.dark{
 /*material dark scheme*/
 
 --textNormal: rgba(255,255,255,0.87);
+--codeNormal: rgba(255,255,255,0.87);
 --textHeading: rgba(255,255,255, 0.95);
 --bodyBackground: #181818;
 --navText: rgba(255,255,255,0.95);
 --navBackground:#202020;
 --articleBackground: #181818;
 --linkNormal: #BB86FC;
---dropdownMenu: #2E2E2E;
+--dropdownMenu: #2D2D2D;
 --searchBackground: #2D2D2D;
 --searchColor: rgba(255,255,255, 0.95); 
 --border: 1px solid #181818;
@@ -55,6 +57,7 @@ body.dark{
 --theadBackground:transparent;
 --codeBackground: #1E1E1E;
 --quoteBackground: #1E1E1E;
+--darkToggle: #03DAC6;
 
 --prism-comment: #d9d7e0;
 --prism-property: /*#2de3da;*/#03DAC6;
@@ -233,7 +236,7 @@ font-weight: 500;
 
 blockquote{
 border-radius: 4px;
-margin: 0;
+margin: 0 0 1.45rem 0;
 background: var(--quoteBackground);
 }
 
@@ -365,37 +368,37 @@ li.navigation__item:hover ul.drop-down{
 	position: absolute;
     min-width: 122px;
     margin-top: 0px;
-   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 25px -8px;*/
-   -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.05)!important;
-		  box-shadow: 0 1px 2px 0 rgba(0,0,0,.05)!important;
+
     list-style: none;
 
     border-radius: 4px;
-   /* transition: opacity 0.143s ease 0s, -webkit-transform 0.143s ease 0s, transform 0.143s ease 0s;*/
-	opacity: 0;
+    transition: opacity 0.143s ease 0s, -webkit-transform 0.143s ease 0s, transform 0.143s ease 0s;
+	
     transform: scale(0.9) translateY(-10px);
+	opacity: 0;
 	padding: 5px 10px;
     border-radius: 4px;
-	border: 1px solid rgba(0, 0, 0, 0.05);
+	border: 0px solid rgba(0, 0, 0, 0.05);
 	font-size: 18px;	
 	margin-left: 0;
 	z-index: 1000;
 	background-color: var(--dropdownMenu);
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	position: absolute;
 	}
+	
 	
 	
 li.navigation__item:hover ul.drop-down{	
 	position: absolute;
     min-width: 122px;
     margin-top: 0px;
-    /*box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 25px -8px;*/
-	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.05)!important;
-		  box-shadow: 0 1px 2px 0 rgba(0,0,0,.05)!important;
+
     list-style: none;
  
     border-radius: 4px;
-	border: 1px solid rgba(0, 0, 0, 0.05);
-    /*transition: opacity 0.143s ease 0s, -webkit-transform 0.143s ease 0s, transform 0.143s ease 0s;*/
+	border: 0px solid rgba(0, 0, 0, 0.05);
+    transition: opacity 0.143s ease 0s, -webkit-transform 0.143s ease 0s, transform 0.143s ease 0s;
 	opacity: 1;
     transform: scale(1) translateY(0px) !important;
 	padding: 5px 10px;
@@ -404,7 +407,8 @@ li.navigation__item:hover ul.drop-down{
 	margin-left: 0;
 	z-index: 1000;
 	background-color: var(--dropdownMenu);
-
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	position: absolute;
 	}
 	
 	li.navigation__item:hover ul.drop-down li{
@@ -420,18 +424,26 @@ li.navigation__item:hover ul.drop-down{
     transform: rotateZ(-90deg) translateX(3px);
 	display: inline-block;
     align-self: center;
+	
 	}
 	
 	
 	ul.drop-down:before {
     content: "◆";
     color: var(--dropdownMenu);
+	
 	font-size: 24px;
     position: absolute;
-    z-index: 120000;
     top: -19.5px;
 	left: 18px;
     display: block;
+	box-shadow: none;
+	border: 0px;
+	z-index: 98;
+	
+
+	border-radius: 0px;
+	box-shadow: none;
 }
 
 
@@ -489,10 +501,7 @@ color: var(--navBackground);
 /*prismjs customizations */  
 
 
-code[class*="language-"], pre[class*="language-"] {
-color: inherit!important;
-text-shadow: none!important;
-}
+
 /*prismjs customizations */  
 :not(pre) > code[class*="language-"], pre[class*="language-"]{
 background: var(--codeBackground)!important;
@@ -506,11 +515,14 @@ border-radius: 4px;
 
 code[class*=language-],
 pre[class*=language-] {
-	color: #000;
+	/*color: #000;*/
+	color: var(--codeNormal);
 	background: 0 0;
-	text-shadow: 0 1px #fff;
+	/*text-shadow: 0 1px #fff;*/
+	text-shadow: none;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 15.5px;
+	font-size: 16px;
+	font-weight: 400;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -669,3 +681,131 @@ input.dark-toggle{
 display: none;
 }
 
+
+
+/*algolia customizations*/
+
+.search .ds-dropdown-menu .ds-dataset-1{
+background: var(--dropdownMenu);
+border-radius: 4px;
+border: 0px solid!important;
+    transition: opacity 0.143s ease 0s, -webkit-transform 0.143s ease 0s, transform 0.143s ease 0s!important;
+
+}
+
+
+.search .algolia-autocomplete-right .ds-dropdown-menu .ds-dataset-3{
+border: 0px solid!important;
+border-radius: 4px;
+background: transparent;
+margin-top: -4px;
+z-index: 1000;
+
+}
+.ds-dataset-3 .algolia-docsearch-suggestion{
+background: transparent;
+}
+
+.ds-dataset-1 .ds-suggestion .algolia-docsearch-suggestion__secondary{
+background: var(--dropdownMenu);
+}
+
+.ds-dataset-1 .algolia-docsearch-suggestion--wrapper{
+background: var(--dropdownMenu);
+}
+.ds-dataset-1 .algolia-docsearch-suggestion{
+background: var(--dropdownMenu);
+}
+
+.algolia-autocomplete .ds-dropdown-menu {
+border: 0px green solid;
+	top: 36px!important;
+	border-radius: 4px;
+	margin: 6px 0 0;
+	padding: 0;
+	text-align: left;
+	height: auto;
+	position: relative;
+	background: transparent;
+	border: none;
+	z-index: 999;
+	max-width: 600px;
+	min-width: 500px;
+	border: 0px;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+	/*transition: opacity 0.143s ease 0s, -webkit-transform 0.143s ease 0s, transform 0.143s ease 0s;
+	
+    transform: scale(0.9) translateY(-10px);*/
+}
+.ds-dataset-1 .algolia-docsearch-suggestion--wrapper{
+border: 0px solid green;	
+	
+}
+
+.algolia-autocomplete .ds-dropdown-menu:before {
+	display: block;
+	position: absolute;
+	content: '';
+	font-size: 24px;
+	
+	background: var(--dropdownMenu);
+	top: -3.85px;
+	border-top: 0 solid #d9d9d9!important;
+	border-right: 0 solid #d9d9d9!important;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	border-radius: 0px;
+	box-shadow: none;
+}
+
+
+
+.ds-dataset-1 .algolia-docsearch-suggestion--wrapper .algolia-docsearch-suggestion--title .algolia-docsearch-suggestion--text{
+color: var(--textNormal);
+}
+
+.ds-dataset-1 .ds-suggestion .algolia-docsearch-suggestion--wrapper .algolia-docsearch-suggestion--subcategory-column-text{
+color: var(--textHeading);
+}
+.ds-dataset-1 .ds-suggestion .algolia-docsearch-suggestion--wrapper .algolia-docsearch-suggestion--title{
+color: var(--textNormal);
+}
+
+.ds-dataset-1 .ds-suggestion .algolia-docsearch-suggestion--category-header .algolia-docsearch-suggestion--category-header-lvl0{
+color: var(--linkNormal);
+}
+
+.ds-dataset-1 .ds-suggestions .ds-suggestion .algolia-docsearch-suggestion__secondary .algolia-docsearch-suggestion--wrapper .algolia-docsearch-suggestion--content .algolia-docsearch-suggestion--title .algolia-docsearch-suggestion--highlight, .ds-dataset-1 .ds-suggestion .algolia-docsearch-suggestion--wrapper .algolia-docsearch-suggestion--title .algolia-docsearch-suggestion--highlight{
+color: var(--linkNormal);
+}
+
+
+
+.algolia-autocomplete .algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight{padding:0 0 1px;background:inherit;box-shadow:inset 0 -2px 0 0 var(--linkNormal);
+}
+.algolia-autocomplete .ds-dropdown-menu .ds-suggestions a{text-decoration:none}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--category-header .algolia-docsearch-suggestion--category-header-lvl0 .algolia-docsearch-suggestion--highlight,
+.algolia-autocomplete .algolia-docsearch-suggestion--category-header .algolia-docsearch-suggestion--category-header-lvl1 .algolia-docsearch-suggestion--highlight,
+.algolia-autocomplete .algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight {
+	padding: 0 0 1px;
+	background: inherit;
+	box-shadow: inset 0 -2px 0 0 var(--linkNormal);
+	color: inherit
+}
+
+.ds-dataset-1 .ds-suggestions .ds-suggestion .algolia-docsearch-suggestion__secondary .algolia-docsearch-suggestion--wrapper .algolia-docsearch-suggestion--subcategory-column .algolia-docsearch-suggestion--subcategory-column-text .algolia-docsearch-suggestion--highlight, .ds-dataset-1 .ds-suggestion .algolia-docsearch-suggestion--wrapper .algolia-docsearch-suggestion--subcategory-column-text .algolia-docsearch-suggestion--highlight{
+	color: var(--linkNormal);
+	
+		box-shadow: inset 0 -2px 0 0 var(--linkNormal);
+
+}
+
+
+.search__input {
+    padding: 4px 16px;
+    border-radius: 3px;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--title{margin-bottom:4px;color:#02060c;font-size:.9em;font-weight:400};
