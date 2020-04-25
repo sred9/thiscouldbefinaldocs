@@ -697,7 +697,7 @@ border: 0px solid!important;
 .search .algolia-autocomplete-right .ds-dropdown-menu .ds-dataset-3{
 border: 0px solid!important;
 border-radius: 4px;
-background: transparent;
+background: transparent!important;
 margin-top: -4px;
 z-index: 1000;
 
@@ -707,14 +707,14 @@ background: transparent;
 }
 
 .ds-dataset-1 .ds-suggestion .algolia-docsearch-suggestion__secondary{
-background: var(--dropdownMenu);
+background: var(--dropdownMenu)!important;
 }
 
 .ds-dataset-1 .algolia-docsearch-suggestion--wrapper{
-background: var(--dropdownMenu);
+background: var(--dropdownMenu)!important;
 }
 .ds-dataset-1 .algolia-docsearch-suggestion{
-background: var(--dropdownMenu);
+background: var(--dropdownMenu)!important;
 }
 
 .algolia-autocomplete .ds-dropdown-menu {
@@ -726,13 +726,13 @@ border: 0px green solid;
 	text-align: left;
 	height: auto;
 	position: relative;
-	background: var(--dropdownMenu);
+	background: var(--dropdownMenu)!important;
 	border: none;
 	z-index: 999;
 	max-width: 600px;
 	min-width: 500px;
 	border: 0px;
-	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)!important;
 
 	/*transition: opacity 0.143s ease 0s, -webkit-transform 0.143s ease 0s, transform 0.143s ease 0s;
 	
@@ -749,7 +749,7 @@ border: 0px solid green;
 	content: '';
 	font-size: 24px;
 	
-	background: var(--dropdownMenu);
+	background: var(--dropdownMenu)!important;
 	top: -3.85px;
 	border-top: 0 solid #d9d9d9!important;
 	border-right: 0 solid #d9d9d9!important;
