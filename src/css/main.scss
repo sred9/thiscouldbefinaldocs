@@ -726,7 +726,7 @@ border: 0px green solid;
 	text-align: left;
 	height: auto;
 	position: relative;
-	background: transparent;
+	background: var(--dropdownMenu);
 	border: none;
 	z-index: 999;
 	max-width: 600px;
@@ -790,7 +790,7 @@ color: var(--linkNormal);
 .algolia-autocomplete .algolia-docsearch-suggestion--category-header .algolia-docsearch-suggestion--category-header-lvl1 .algolia-docsearch-suggestion--highlight,
 .algolia-autocomplete .algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight {
 	padding: 0 0 1px;
-	background: inherit;
+	background: transparent;
 	box-shadow: inset 0 -2px 0 0 var(--linkNormal);
 	color: inherit
 }
