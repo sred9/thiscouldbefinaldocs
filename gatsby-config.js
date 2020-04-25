@@ -195,7 +195,7 @@ module.exports = {
     },
 	},
     {
-      resolve: 'gatsby-plugin-algolia-docsearch',
+      resolve: 'gatsby-plugin-algolia-docsearch-custom',
       options: {
         apiKey: "acfb7def12803db2cd4ac0539b2b571a",
         indexName: "hackerone",
