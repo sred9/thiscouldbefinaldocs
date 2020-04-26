@@ -8,6 +8,8 @@ description: "Breadcrumbs are a good way to display your current location. This 
 
 Materialize CSS provides a versatile way to create image and item carousels that are touch compatible making the mobile user experience smooth. 
 
+<a href="#" class="run">Run code</a>
+
 ```html
 <div class="carousel">
   <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>

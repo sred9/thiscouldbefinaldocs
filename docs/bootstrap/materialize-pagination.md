@@ -10,7 +10,7 @@ Add pagination links to help split up your long content into shorter, easier to 
 
 ### Usage
 
-```html{numberLines: true}
+```html
 <ul class="pagination">
    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
    <li class="active"><a href="#!">1</a></li>

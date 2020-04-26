@@ -4,6 +4,7 @@
 
 body {
 --textNormal: rgba(14, 30, 37, 0.87);
+--textNeutral: rgba(255,255,255,0.87) ;
 --codeNormal: /*#252c33;*/ rgba(14, 30, 37, 0.87);
 --textHeading: rgba(14, 30, 37, 0.9);
 --bodyBackground: #f9f9f9;
@@ -34,6 +35,17 @@ body {
 --prism-string: #a2466c;
 --prism-empty: #e0d7d1;
 
+--prism-comment: #527713;
+--prism-property: #137886;
+--prism-punctuation: #53450e;
+--prism-selector: #b94185;
+--prism-atrule: #096fb3;
+--prism-inserted: #088413;
+--prism-deleted: #da0013;
+--prism-regex: #dc0437;
+--prism-string: #a2466c;
+--prism-empty: #e0d7d1;
+
 
 
 color: var(--textNormal);
@@ -44,6 +56,7 @@ body.dark{
 /*material dark scheme*/
 
 --textNormal: rgba(255,255,255,0.87);
+--textNeutral: rgba(14, 30, 37, 0.87);
 --codeNormal: rgba(255,255,255,0.87);
 --textHeading: rgba(255,255,255, 0.95);
 --bodyBackground: #181818;
@@ -836,6 +849,35 @@ display: none;
 
 .gatsby-code-button[data-tooltip]:hover:after, .gatsby-code-button[data-tooltip]:focus:after{
 	
-content: "copy";
+display: none;
+}
+svg.gatsby-code-button-icon{
+	display: none;
+	
 }
 
+
+.run{
+	float: right;
+    bottom: -1.9rem;
+    z-index: 100;
+    right: 1.9rem;
+    opacity: 1;
+    position: relative;
+	text-decoration: none;
+	font-size: 16px;
+	border:2px solid var(--codeBackground);
+
+	line-height: 21px;
+	&:hover {
+		bottom: -1.9rem;
+		right: 1.85rem;
+		position: relative;
+		font-size: 16px;
+		/*color: var(--textNeutral);*/
+		border:1px solid var(--linkNormal);
+		padding: 1px 2px;
+		border-radius: 3px;
+		line-height: 21px;
+	}
+}
