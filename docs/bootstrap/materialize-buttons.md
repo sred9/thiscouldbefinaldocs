@@ -1,7 +1,7 @@
 ---
-title: "Materialize Table"
-path: "/bootstrap/table"
-id: "/bootstrap/table"
+title: "Materialize Buttons"
+path: "/bootstrap/buttons"
+id: "/bootstrap/buttons"
 
 description: "Breadcrumbs are a good way to display your current location. This is usually used when you have multiple layers of content."
 ---
