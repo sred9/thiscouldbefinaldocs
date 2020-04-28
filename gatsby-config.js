@@ -239,5 +239,60 @@ module.exports = {
     },
   },
   
+  /*{
+  resolve: 'gatsby-remark-code-repls',
+  options: {
+    // Optional default link text.
+    // Defaults to "REPL".
+    // e.g. <a href="...">Click here</a>
+    defaultText: 'Click here',
+
+
+    // Example code links are relative to this dir.
+    // e.g. examples/path/to/file.js
+    directory: `${__dirname}/examples/`,
+
+    // Optional link target.
+    // Note that if a target is specified, "noreferrer" will also be added.
+    // e.g. <a href="..." target="_blank" rel="noreferrer">...</a>
+    target: '_blank',
+
+
+    // Provider specific options
+    codepen: {
+      // Optional path to a custom redirect template.
+      // The redirect page is only shown briefly,
+      // But you can use this setting to override its CSS styling.
+      // redirectTemplate: `${__dirname}/src/redirect-template.js`,
+
+      // Optional HTML contents to inject into REPL.
+      // Defaults to `<div id="root"></div>`.
+      // e.g. '<div id="root"></div>'
+      html: '',
+
+      // Optional externals to load from a CDN.
+      // e.g. '//unpkg.com/react/umd/react.development.js'
+      externals: [],
+
+      // Include CSS with matching name.
+      // If set to `true`, when specifying `file1.js` as example file,
+      // it will try to inject the CSS in `file1.css` if the file exists,
+      // otherwise the default behaviour is preserved
+      includeMatchingCSS: false,
+    },
+
+    codesandbox: {
+      // Optional HTML contents to inject into REPL.
+      // Defaults to `<div id="root"></div>`.
+      // e.g. '<div id="root"></div>'
+      html: '',
+
+      // Optional runtime dependencies to load from NPM.
+      // e.g. ['react', 'react-dom'] or ['react@15', 'react-dom@15']
+      dependencies: [],
+    }
+  },
+},*/	
+  
   ],
 };
